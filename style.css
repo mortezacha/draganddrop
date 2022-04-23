@@ -1,0 +1,58 @@
+:root {
+  --image-width:120px;
+  --image-height:var(--image-width);
+  --answer-width: var(--image-width)*2; 
+}
+
+body{
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+.wrapper {
+  width: var(--image-width)*9;
+  border: 1px solid black;
+  overflow: hidden; /*add this to contain floated children*/
+}
+/* -------------------------- */
+.puzzle-container {
+  width: var(--answer-width);
+  float:left;
+  border: 1px solid red;
+  margin: 0px;
+  padding: 0; 
+  border-spacing: 1;
+  align-items: center;
+}
+
+td{
+  margin: 0px;
+  padding: 0;
+  background-color: brown;
+}
+.answer-container {
+  float: left;
+  width: var(--image-width);
+  height: var(--image-height);
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  
+  align-items: center;
+}
+/* ----------------------------- */
+.images {
+  border: 1px solid green;
+  float: right; /* add this */
+}
+.imagewidth{
+ width:var(--image-width);
+ height:var(--image-height);
+}
+
+#box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+}
